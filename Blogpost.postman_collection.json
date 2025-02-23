@@ -1,0 +1,1971 @@
+{
+	"info": {
+		"_postman_id": "55a0b9ca-c8f1-44fc-a503-b19c7ff861f0",
+		"name": "Blogpost",
+		"description": "sprint_4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38278904"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "ZH8ITqLxLql3ZBJeHVGP8CiQdlqQfQhU00MujEWrvy6WuMOe6w6bqOhd0i5zCBfT",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register?email=bb@bb.gmail&password=12345678&name=deliii&password_confirmation=12345678",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "bb@bb.gmail"
+								},
+								{
+									"key": "password",
+									"value": "12345678"
+								},
+								{
+									"key": "tags",
+									"value": "  nice  ,//,khafan,/,-,*,6,`, ,",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "deliii"
+								},
+								{
+									"key": "tags[]",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345678"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successful",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register?username=deliii&email=bb@bb.gmail&password=12345678&c_password=12345678",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "deliii"
+										},
+										{
+											"key": "email",
+											"value": "bb@bb.gmail"
+										},
+										{
+											"key": "password",
+											"value": "12345678"
+										},
+										{
+											"key": "c_password",
+											"value": "12345678"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "duplicate",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "ZH8ITqLxLql3ZBJeHVGP8CiQdlqQfQhU00MujEWrvy6WuMOe6w6bqOhd0i5zCBfT",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register?email=bb@bb.gmail&password=12345678&password_confirmation=12345678&name=deliii",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bb@bb.gmail"
+										},
+										{
+											"key": "password",
+											"value": "12345678"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678"
+										},
+										{
+											"key": "tags",
+											"value": "  nice  ,//,khafan,/,-,*,6,`, ,",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "deliii"
+										},
+										{
+											"key": "tags[]",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "requirement",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "ZH8ITqLxLql3ZBJeHVGP8CiQdlqQfQhU00MujEWrvy6WuMOe6w6bqOhd0i5zCBfT",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register?email=bb@bb.gmail&password=12345678&c_password=12345678&name=deliii",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bb@bb.gmail"
+										},
+										{
+											"key": "password",
+											"value": "12345678"
+										},
+										{
+											"key": "c_password",
+											"value": "12345678"
+										},
+										{
+											"key": "tags",
+											"value": "  nice  ,//,khafan,/,-,*,6,`, ,",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "deliii"
+										},
+										{
+											"key": "tags[]",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "emailValidation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "ZH8ITqLxLql3ZBJeHVGP8CiQdlqQfQhU00MujEWrvy6WuMOe6w6bqOhd0i5zCBfT",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register?email=bb@bb.gmail&password=12345678&password_confirmation=12345678&name=deliii",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bb@bb.gmail"
+										},
+										{
+											"key": "password",
+											"value": "12345678"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678"
+										},
+										{
+											"key": "tags",
+											"value": "  nice  ,//,khafan,/,-,*,6,`, ,",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "deliii"
+										},
+										{
+											"key": "tags[]",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "length of password and confirm",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "ZH8ITqLxLql3ZBJeHVGP8CiQdlqQfQhU00MujEWrvy6WuMOe6w6bqOhd0i5zCBfT",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register?email=bb@bb.gmail&password=12345678&c_password=12345678&name=deliii",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bb@bb.gmail"
+										},
+										{
+											"key": "password",
+											"value": "12345678"
+										},
+										{
+											"key": "c_password",
+											"value": "12345678"
+										},
+										{
+											"key": "tags",
+											"value": "  nice  ,//,khafan,/,-,*,6,`, ,",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "deliii"
+										},
+										{
+											"key": "tags[]",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login?email=bb@bb.gmail&password=12345678",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "bb@bb.gmail"
+								},
+								{
+									"key": "password",
+									"value": "12345678"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "requirement",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login?password=12345678",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									],
+									"query": [
+										{
+											"key": "password",
+											"value": "12345678"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "successful",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login?email=bb@bb.gmail&password=12345678",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bb@bb.gmail"
+										},
+										{
+											"key": "password",
+											"value": "12345678"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "login\n\nregister\n\nlogout"
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Create blog",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs?title=the title&body=44 test",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "the title"
+								},
+								{
+									"key": "body",
+									"value": "44 test"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create blog",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs?title=the title&body=44 test",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "the title"
+										},
+										{
+											"key": "body",
+											"value": "44 test"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "successful without tags",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs?title=the title&body=44 test",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "the title"
+										},
+										{
+											"key": "body",
+											"value": "44 test"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "successful with tags",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs?title=the title&content=44 test&tags[]=cool&tags[]=COol&tags[]=bad",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "the title"
+										},
+										{
+											"key": "content",
+											"value": "44 test"
+										},
+										{
+											"key": "tags[]",
+											"value": "cool"
+										},
+										{
+											"key": "tags[]",
+											"value": "COol"
+										},
+										{
+											"key": "tags[]",
+											"value": "bad"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "duplicate tags",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs?title=the title&content=44 test&tags[]=cool&tags[]=COol&tags[]=bad",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "the title"
+										},
+										{
+											"key": "content",
+											"value": "44 test"
+										},
+										{
+											"key": "tags[]",
+											"value": "cool"
+										},
+										{
+											"key": "tags[]",
+											"value": "COol"
+										},
+										{
+											"key": "tags[]",
+											"value": "bad"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Edit blog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/1?title=the title&body=44 test& tags[]=cool&tags[]=fine",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"1"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "the title"
+								},
+								{
+									"key": "body",
+									"value": "44 test"
+								},
+								{
+									"key": " tags[]",
+									"value": "cool"
+								},
+								{
+									"key": "tags[]",
+									"value": "fine"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete blog",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "permission denied",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "successful",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "publish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "23|5O7xXgpE60Gf1Vzw5RECejzLBPqo5yweGkrFdD0x5e22e1ed",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/1/publish?delay_hours=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"1",
+								"publish"
+							],
+							"query": [
+								{
+									"key": "delay_hours",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "CRUD operation"
+		},
+		{
+			"name": "Like",
+			"item": [
+				{
+					"name": "like Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "24|CHZ6K1yq3jeClkS0Z7CTE4eY0h4Dno5K0rJyY4auea18ecb4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "23|5O7xXgpE60Gf1Vzw5RECejzLBPqo5yweGkrFdD0x5e22e1ed",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/like/blog/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"like",
+								"blog",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "like again is not allowed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs/2/like",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs",
+										"2",
+										"like"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "like Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "24|CHZ6K1yq3jeClkS0Z7CTE4eY0h4Dno5K0rJyY4auea18ecb4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "23|5O7xXgpE60Gf1Vzw5RECejzLBPqo5yweGkrFdD0x5e22e1ed",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/like/blog/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"like",
+								"blog",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "like again is not allowed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/like/comment/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"like",
+										"comment",
+										"2"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "who likes a blog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/2/like",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"2",
+								"like"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "like again is not allowed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs/2/like",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs",
+										"2",
+										"like"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "unlike",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/2/like",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"2",
+								"like"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "unlike again is not allowed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/blogs/2/like",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"blogs",
+										"2",
+										"like"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			],
+			"description": "like\n\nunlike\n\nlike endpoint: show list of users that liked a specific blog"
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/search?value=test 444",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "test 444"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "validation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/search?value=test 444",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"search"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "test 444"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			],
+			"description": "search words in blog title, blog content and name of Author"
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "create comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "23|5O7xXgpE60Gf1Vzw5RECejzLBPqo5yweGkrFdD0x5e22e1ed",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/15/comment?comment=this is a comment test",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"15",
+								"comment"
+							],
+							"query": [
+								{
+									"key": "comment",
+									"value": "this is a comment test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "23|5O7xXgpE60Gf1Vzw5RECejzLBPqo5yweGkrFdD0x5e22e1ed",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/blogs/comment/2?comment=this is updated one",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"blogs",
+								"comment",
+								"2"
+							],
+							"query": [
+								{
+									"key": "comment",
+									"value": "this is updated one"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tag",
+			"item": [
+				{
+					"name": "tags and related blogs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "UqM6opHxgswdzoiu0CIHuPqltiEiMut3XlMA7e4B8VEb8E7buTuKzZFeAvz9uajh",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "create tag in creating blogs\n\ndelete tags in deleting blog\n\nadd or remove tags in blog editing\n\ntag endpoint: list of tags and count of related blogs"
+		},
+		{
+			"name": "exportation",
+			"item": [
+				{
+					"name": "exportation",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "download export",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "24|CHZ6K1yq3jeClkS0Z7CTE4eY0h4Dno5K0rJyY4auea18ecb4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/blogs/exports/blogs_2024-10-02_to_2024-10-09",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"blogs",
+								"exports",
+								"blogs_2024-10-02_to_2024-10-09"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "24|CHZ6K1yq3jeClkS0Z7CTE4eY0h4Dno5K0rJyY4auea18ecb4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/notifications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
